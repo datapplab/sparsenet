@@ -20,7 +20,7 @@ setup(
     description='Implementation of sparse neural networks',
     # long_description=readme,
     # long_description_content_type='text/markdown',
-    license='MIT',
+    license='GPLv3',
 
     # Package info
     # packages=find_packages(exclude=('*test*',)),
