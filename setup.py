@@ -1,5 +1,7 @@
-#!/usr/bin/env python
+##!/usr/bin/env python
 
+
+from __future__ import absolute_import
 from setuptools import setup, find_packages
 
 VERSION = '0.0.1'
@@ -28,7 +30,7 @@ setup(
     #
     zip_safe=True,
     install_requires=requirements,
-	python_requires='>=3.6',
+    python_requires='>=3.6',
 
     # Classifiers
     classifiers=[
