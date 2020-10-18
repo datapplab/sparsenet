@@ -23,7 +23,7 @@ setup(
     license='GPLv3',
 
     # Package info
-    # packages=find_packages(exclude=('*test*',)),
+    packages=find_packages(),
 
     #
     zip_safe=True,
