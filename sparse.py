@@ -45,7 +45,7 @@ def shuffle_2d(nin, nout=None, din=8, dout=1, rseed=1):
     number of actual output neurons, usually nout and occassionally <nout due to dropout nodes.
   """
 
-        if nout is not None:
+    if nout is not None:
         din=math.ceil(nin*dout/nout)
     else:
         nout=math.ceil(nin*dout/din)
