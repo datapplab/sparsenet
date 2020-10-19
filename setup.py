@@ -14,11 +14,11 @@ requirements = [
 
 setup(
     # Metadata
-    name='sparse',
+    name='sparsenet',
     version=VERSION,
     author='Weijun Luo',
     author_email='luo_weijun@yahoo.com',
-    url='https://github.com/datapplab/sparse',
+    url='https://github.com/datapplab/sparsenet',
     description='Implementation of sparse neural networks',
     # long_description=readme,
     # long_description_content_type='text/markdown',
