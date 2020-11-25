@@ -14,6 +14,8 @@ The novel uniform sparse network (USN) has even and sparse connectivity within e
 
 USN and random sparse networks are implemented in *sparsenet* as options of *sparse* layer class (USN is the default). *sparse* layer is very similar to the commonly used *Dense* layer in *Keras* and *tf.keras* in both coding and function, and intend to be a full replacement of *Dense* layer in all aspects and conditions. Just like *Dense* layer, *sparse* layer can be used as basic block for complex neural network and deep learning models. 
 
+![](figures/fig0_usn2.png)
+
 ## Citation
 
 Please cite the USN paper when using this open-source  package. This will help the project and our team:
@@ -62,7 +64,7 @@ model = tf.keras.models.Sequential([
 ## Tutorials with Full examples
 
 In this repository, you can find two tutorials on USN and sparse neural networks. 
-* [Tutorial on basic sparse neural networks with  data](sparse_tutorial_basics_scRNA_Seq.ipynb) [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datapplab/sparsenet/blob/main/sparse_tutorial_basics_scRNA_Seq.ipynb)
+* [Tutorial on basic sparse neural networks with scRNA-Seq data](sparse_tutorial_basics_scRNA_Seq.ipynb) [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datapplab/sparsenet/blob/main/sparse_tutorial_basics_scRNA_Seq.ipynb)
 * [Tutorial on basic and deep sparse neural networks with MNIST data](sparse_tutorial_MNIST_CNN_RNN.ipynb) [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datapplab/sparsenet/blob/main/sparse_tutorial_MNIST_CNN_RNN.ipynb)
 
 ## More information
