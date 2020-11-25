@@ -1,9 +1,8 @@
 
 # Uniform Sparse Network (USN) and Sparse Neural Networks
 
-## Overview
 
-![](figures/fig0_usn2.png)
+## Overview
 
 The novel uniform sparse network (USN) has even and sparse connectivity within each layer. USN
 * is a natural generalization of the fully connected network (FCN);
@@ -14,6 +13,9 @@ The novel uniform sparse network (USN) has even and sparse connectivity within e
 * shows the potential to fully replace FCN in a wide range of deep learning architectures and broad applications.
 
 USN and random sparse networks are implemented in *sparsenet* as options of *sparse* layer class (USN is the default). *sparse* layer is very similar to the commonly used *Dense* layer in *Keras* and *tf.keras* in both coding and function, and intend to be a full replacement of *Dense* layer in all aspects and conditions. Just like *Dense* layer, *sparse* layer can be used as basic block for complex neural network and deep learning models. 
+
+### USN definition
+![](figures/fig0_usn2.png)
 
 ### USN with CNN and RNN architecture
 ![](figures/preconv_pregru2.png)
