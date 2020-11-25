@@ -1,30 +1,38 @@
 
 # Uniform Sparse Network (USN) and Sparse Neural Networks
 
+## Citation
+Please cite the USN paper when using this open-source  package. This will help the project and our team:
 
+Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, accepted, <a href=https://doi.org/10.1093/>doi to come</a>
+
+```BibTex
+@article{luo:2020,
+  author =    {Weijun Luo},
+  title =     {Improving Neural Network with Uniform Sparse Connectivity},
+  journal =   {IEEE Access},
+  year =      2020,
+  volume =    {},
+  number =    {},
+  pages =     {}
+}
+```
 ## Overview
 
-The novel uniform sparse network (USN) has even and sparse connectivity within each layer. USN
+The novel uniform sparse network (USN) has even and sparse connectivity within each layer (or uniform sparse layer). USN models has one striking property: at given connection density, USN topology can differ a lot (Figure 1 below) but performance stays the same. Unlike other sparse neural network models, no structure search or optimization is needed for USN models. USN:
 * is a natural generalization of the fully connected network (FCN);
-* has one striking property that its performance is independent of the substantial topology variation and enormous model space;
 * is static sparse neural network, search-free, robust and fast to train;
 * can improve FCN in accuracy, robustness and scalability simultaneously by tunning the connection density/sparsity hyperparameter;
 * is robust against overfitting, can easily scale up to big neural network without extra regularization (eg. dropout, L1 or L2 etc);
 * shows the potential to fully replace FCN in a wide range of deep learning architectures and broad applications.
 
-USN and random sparse networks are implemented in *sparsenet* as options of *sparse* layer class (USN is the default). *sparse* layer is very similar to the commonly used *Dense* layer in *Keras* and *tf.keras* in both coding and function, and intend to be a full replacement of *Dense* layer in all aspects and conditions. Just like *Dense* layer, *sparse* layer can be used as basic block for complex neural network and deep learning models. 
+USN and random sparse networks are implemented in *sparsenet* as options of *sparse* layer class (USN is the default). *sparse* layer is very similar to the commonly used *Dense* layer in *Keras* and *tf.keras* in both coding and function, and intends to be a full replacement of *Dense* layer in all aspects and conditions. Just like *Dense* layer, *sparse* layer can be used as basic building block for complex neural networks and deep learning models. 
 
-### USN definition
+### USN definition (Figure 1)
 ![](figures/fig0_usn2.png)
 
-### USN with CNN and RNN architecture
+### USN with CNN and RNN architecture for MNIST dataset (Figure 2)
 ![](figures/preconv_pregru2.png)
-
-## Citation
-
-Please cite the USN paper when using this open-source  package. This will help the project and our team:
-
-Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, accepted, <a href=https://doi.org/10.1093/>doi to come</a>
 
 ## Installation (unix/linux/bash command line)
 
@@ -43,7 +51,7 @@ git clone https://github.com/datapplab/sparsenet.git
 
 ## Quick start (Python code)
 
-As shown in the quick example below, *sparse* layer is used the same way as *Dense* layer, except with a few additional arguments like *density* (connection density or sparsity).
+As shown in the quick example below, *sparse* layer is used the same way as *Dense* layer in *Keras*, except with a few additional arguments like *density* (connection density or sparsity).
 
 ``` python
 #import tensorflow
