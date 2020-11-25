@@ -1,9 +1,9 @@
 
 # Uniform Sparse Network (USN) and Sparse Neural Networks
 
-![](figures/fig0_usn2.png)
-
 ## Overview
+
+![](figures/fig0_usn2.png)
 
 The novel uniform sparse network (USN) has even and sparse connectivity within each layer. USN
 * is a natural generalization of the fully connected network (FCN);
