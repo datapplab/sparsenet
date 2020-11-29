@@ -201,7 +201,7 @@ class sparse(Layer):
         This argument is redundant with din and dout, default to be None. When specified, the latter two will be overridden. 
       share_kernel: whether the same weight is used for all connections of a input neuron.
       weight_type: the type of tensor used for the kernel or weight matrix, 1 sparse tensor and 2 regular dense tensor.
-      confun: connection pattern specifying function, i.e. "shuffle_2d", "shuffle_1d", or random_2d
+      confun: connection pattern specifying function, i.e. "shuffle_2d", "shuffle_1d", or "random_2d",
         corresponding to uniform sparse connection in both input and output layers, uniform sparse
         connection in input but random sparse in output layer, or random sparse connection for for
         both input and output layers.

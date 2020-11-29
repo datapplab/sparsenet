@@ -4,7 +4,7 @@
 ## Citation
 Please cite the USN paper when using this open-source  package. This will help the project and our team:
 
-Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, accepted, <a href=https://doi.org/10.1093/>doi to come</a>
+Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, accepted, <a href=https://doi.org/10.1109/ACCESS.2020.3040943/>doi: 10.1109/ACCESS.2020.3040943</a>
 
 ```BibTex
 @article{luo:2020,
@@ -12,7 +12,7 @@ Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2
   title =     {Improving Neural Network with Uniform Sparse Connectivity},
   journal =   {IEEE Access},
   year =      2020,
-  volume =    {},
+  volume =    {8},
   number =    {},
   pages =     {}
 }
@@ -51,7 +51,7 @@ git clone https://github.com/datapplab/sparsenet.git
 
 ## Quick start (Python code)
 
-As shown in the quick example below, *sparse* layer is used the same way as *Dense* layer in *Keras*, except with a few additional arguments like *density* (connection density or sparsity).
+As shown in the quick example below, *sparse* layer is used the same way as *Dense* layer in *Keras*, except with a few additional arguments like *density* (connection density or sparsity). Please check [the documentation with the code](sparsenet/core.py) for details.
 
 ``` python
 #import tensorflow
@@ -63,14 +63,18 @@ import tensorflow as tf
 #sys.path.append('/path/to/your/local/directory/sparsenet')
 from sparsenet.core import sparse
 
-#define a simple two-layer neural network (MLP), X_train is your training data
+#define a simple two-layer neural network (MLP), X_train is your training data (dim 0: samples and dim 1: features)
+#Alternatively, you can use Dense layers as in the lines commented out
 model = tf.keras.models.Sequential([
   tf.keras.layers.Input(shape=X_train.shape[1]),
   # tf.keras.layers.Dense(128, activation=None),
   sparse(units=128, density=0.1, activation=None),
   # tf.keras.layers.Dense(10, activation='softmax')
-  sparse(units=10, density=0.5, activation='softmax'),
+  sparse(units=10, density=0.5, activation='softmax')
 ])
+
+#sparse layer is USN by default, if you want to use random sparse network/layer instead, you specify the layer like:
+  sparse(units=128, density=0.1, activation=None, confun="random_2d")
 ```
 
 ## Tutorials with Full examples
