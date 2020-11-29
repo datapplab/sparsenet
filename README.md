@@ -65,8 +65,8 @@ from sparsenet.core import sparse
 
 #define a simple two-layer neural network (MLP) with USN layers
 #alternatively, you can use Dense layers as in the lines commented out
-##X_train is your training data (dim 0: samples and dim 1: features)
 model = tf.keras.models.Sequential([
+  # X_train is your training data (dim 0: samples and dim 1: features)
   tf.keras.layers.Input(shape=X_train.shape[1]),
   # tf.keras.layers.Dense(128, activation=None),
   sparse(units=128, density=0.1, activation=None),
