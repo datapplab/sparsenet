@@ -86,7 +86,7 @@ In this repository, you can find two tutorials on USN and sparse neural networks
 
 ## More information
 
-Please check the tutorials, package documentation and <a href=https://>the USN paper</a> for more info.
+Please check the tutorials, package documentation and <a href=https://doi.org/10.1109/ACCESS.2020.3040943>the USN paper</a> for more info.
 
 You can reach the author at luo_weijun[AT]yahoo.com
 
