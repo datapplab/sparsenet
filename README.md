@@ -4,7 +4,7 @@
 ## Citation
 Please cite the USN paper when using this open-source  package. This will help the project and our team:
 
-Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, accepted, <a href=https://doi.org/10.1109/ACCESS.2020.3040943>doi: 10.1109/ACCESS.2020.3040943</a>
+Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2020, 8:215705-215715, <a href=https://doi.org/10.1109/ACCESS.2020.3040943>doi: 10.1109/ACCESS.2020.3040943</a>
 
 ```BibTex
 @article{luo:2020,
@@ -14,7 +14,8 @@ Luo W. Improving Neural Network with Uniform Sparse Connectivity. IEEE Access, 2
   year =      2020,
   volume =    {8},
   number =    {},
-  pages =     {}
+  pages =     {215705-215715},
+  doi =	      {10.1109/ACCESS.2020.3040943}
 }
 ```
 ## Overview
